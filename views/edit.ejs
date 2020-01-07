@@ -1,3 +1,32 @@
 <%  include partials/header %>
-  <h1>Hello World! From edit</h1>
+
+<div class="jumbotron">
+    <h1 class="display-4">Hello, World! Edit A Journal You Submitted.</h1>
+    <div class="container">
+        <div class="row">
+            <form class="col-lg-6" action="/journal" method="POST">
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Author</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" name="journal[author]" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Title</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" name="journal[title]" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Sub-Title</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" name="journal[subtitle]" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Image</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" name="journal[image]" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Description</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" name="journal[description]" placeholder="">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 <%  include partials/footer %>
