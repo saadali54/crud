@@ -14,7 +14,7 @@
       <img src="<%=journal.image%>" class="card-img-top" >
         <div class="card-body">
           <h5 class="card-title"><%=journal.title%></h5>
-          <p class="card-text"><%=journal.description.substring(0,100)%></p>
+          <p class="card-text"><%=journal.description.toSubstring(0,100)%></p>
         </div>
         <div class="card-footer">
           <small class="text-muted"><%=journal.published.toDateString()%></small>
